@@ -1,0 +1,9 @@
+@layer theme {
+  :root {
+    --background: oklch(0.139 0.0029 246.26);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+}

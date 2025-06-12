@@ -1,0 +1,23 @@
+{
+  "extends": "@bazzalabs/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@bazzalabs/ui/*": [
+        "./src/*"
+      ]
+    },
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
