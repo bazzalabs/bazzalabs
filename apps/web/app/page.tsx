@@ -11,7 +11,7 @@ const H = ({ children }: { children: React.ReactNode }) => (
   <span className="text-white font-medium">{children}</span>
 )
 
-export function Home() {
+export default function Page() {
   return (
     <div className="flex flex-col flex-1 items-center relative select-none py-24">
       <div className="fixed top-0 left-0 -z-10 size-full mask-radial-from-20% mask-radial-to-80% mask-radial-at-center">
@@ -90,7 +90,3 @@ export function Home() {
     </div>
   )
 }
-
-Home.theme = 'dark'
-
-export default Home

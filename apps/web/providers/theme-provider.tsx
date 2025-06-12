@@ -7,5 +7,13 @@ export function ThemeProvider({
   children,
   ...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  const isDarkMode = true
+  return (
+    <NextThemesProvider
+      forcedTheme={isDarkMode ? 'dark' : undefined}
+      {...props}
+    >
+      {children}
+    </NextThemesProvider>
+  )
 }
