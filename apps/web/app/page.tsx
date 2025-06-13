@@ -5,6 +5,8 @@ import { GithubIcon } from '@bazzalabs/ui/icons/github'
 import { DiscordIcon } from '@bazzalabs/ui/icons/discord'
 import { XIcon } from '@bazzalabs/ui/icons/x'
 import { EnvelopeIcon } from '@bazzalabs/ui/icons/envelope'
+import { ChatBubbleLeftRightIcon } from '@bazzalabs/ui/icons/chat-bubble-left-right'
+import { ArrowUpRightIcon } from '@bazzalabs/ui/icons/arrow-up-right'
 import {
   Avatar,
   AvatarFallback,
@@ -87,6 +89,31 @@ export default function Page() {
               </span>
               <span className="text-gray-12">Founder & Lead Developer</span>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-12 justify-center items-center py-12 h-[60svh]">
+          <h2
+            className="text-5xl sm:text-7xl tracking-[-0.02em] font-[550] text-gray-12 flex items-center gap-6 sm:gap-8"
+            style={{ fontVariationSettings: '"opsz" 28' }}
+          >
+            Let's{' '}
+            <ChatBubbleLeftRightIcon className="size-24 sm:size-32 shrink-0 text-gray-10 transition-colors duration-300 ease-out hover:text-gray-12" />
+            talk.
+          </h2>
+          <div className="flex flex-col gap-2 items-center text-lg sm:text-xl font-[550] tracking-[-0.015em]">
+            <span className="text-gray-10">Seriously, why not?</span>
+            <span className="text-gray-12">Worst case, we'll be friends.</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              className="flex items-center gap-2 bg-gray-12 rounded-[10px] px-3 py-2 h-9 sm:h-10"
+            >
+              <span className="text-gray-1 text-sm sm:text-base font-medium">
+                Book a call
+              </span>
+              <ArrowUpRightIcon className="size-4 sm:size-5 shrink-0 stroke-gray-3 stroke-2.5 transition-colors duration-300 ease-out hover:text-gray-1" />
+            </button>
           </div>
         </div>
         <div className="flex items-center justify-between gap-2.5">
