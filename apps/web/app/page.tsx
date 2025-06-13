@@ -18,7 +18,7 @@ const H = ({ children }: { children: React.ReactNode }) => (
 export default function Page() {
   return (
     <div className="flex flex-col flex-1 items-center relative select-none pt-24 p-4">
-      <div className="fixed top-0 left-0 -z-10 size-full mask-radial-from-20% mask-radial-to-80% mask-radial-at-center">
+      <div className="fixed top-0 left-0 -z-10 size-full mask-radial-from-20% mask-radial-to-50% mask-radial-at-center">
         <div className="mask-graph text-gray-12/20 absolute inset-0 -z-10 bg-current" />
       </div>
       <div className="flex flex-col w-full max-w-[600px] gap-24 sm:gap-32 my-auto">
@@ -39,20 +39,19 @@ export default function Page() {
         </div>
         <div className="flex flex-col gap-6 text-gray-11 font-[450] leading-7 text-sm sm:!text-base">
           <p>
-            Bazza Labs is a small, independent software company focusing on
-            crafting web applications and developer tools that solve{' '}
-            <H>real-world problems.</H>
+            Bazza Labs is a small, independent software company. We build
+            applications and tools that solve <H>real-world problems.</H>
           </p>
           <p>
-            We blend <H>technical expertise</H> with a relentless focus on
-            crafting <H>modern, timeless interfaces</H>. We take pride in every
-            line of code we write and every interface we design.
+            We partner with both ambitious <H>startups</H> and established{' '}
+            <H>enterprises</H> to create web applications and developer tools
+            that deliver meaningful, lasting value for users.
           </p>
           <p>
-            <H>Remote-first</H> and proudly <H>Canadian</H>, Bazza Labs combines
-            the nimbleness of a boutique studio with the ambition to push
-            boundaries on every project. As a one-person powerhouse, we’re able
-            to move at <H>lightning speed</H>.
+            <H>Remote-first</H> and proudly Canadian, we collaborate seamlessly
+            across time zones and industries to sculpt digital experiences that
+            are not only visually striking, but also <H>purposeful</H> and{' '}
+            <H>results-driven</H>.
           </p>
         </div>
         <div className="flex flex-col gap-12 justify-center items-center">
