@@ -37,7 +37,7 @@ export default function Page() {
             </span>
           </div>
         </div>
-        <div className="flex flex-col gap-6 text-sm sm:text-base text-gray-11 font-[450] leading-7">
+        <div className="flex flex-col gap-6 text-gray-11 font-[450] leading-7 text-sm sm:!text-base">
           <p>
             Bazza Labs is a small, independent software company focusing on
             crafting web applications and developer tools that solve{' '}
@@ -82,7 +82,7 @@ export default function Page() {
               <AvatarFallback>KB</AvatarFallback>
               <AvatarImage src="/bazza.png" />
             </Avatar>
-            <div className="flex flex-col gap-1 items-center text-sm sm:text-base">
+            <div className="flex flex-col gap-1 items-center text-sm sm:!text-base">
               <span className="font-medium translate-y-1 text-gray-11">
                 Kian Bazarjani
               </span>
