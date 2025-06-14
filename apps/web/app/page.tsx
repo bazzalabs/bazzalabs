@@ -64,11 +64,31 @@ export default function Page() {
             Projects
           </h2>
           <div className="flex justify-center items-center gap-16">
-            <AvelinIcon className="size-24 sm:size-32 shrink-0 text-gray-12/50 transition-colors duration-300 ease-out hover:text-gray-12" />
-            <BazzaUIIcon
-              colored={false}
-              className='size-22 sm:size-28 shrink-0 **:transition-colors **:duration-300 **:ease-out [&_[data-slot="circle-bottom"]]:fill-gray-12/30 [&_[data-slot="circle-top"]]:fill-gray-12/50  hover:[&_[data-slot="circle-top"]]:fill-[#eb0c0c]/75 hover:[&_[data-slot="circle-bottom"]]:fill-[#0067ff]/75'
-            />
+            <div className="flex flex-col gap-6 items-center group">
+              <AvelinIcon className="size-24 sm:size-32 shrink-0 text-gray-12/50 transition-colors duration-300 ease-out group-hover:text-gray-12 -mb-3" />
+              <div className="flex flex-col gap-4 items-center text-sm sm:!text-base">
+                <span className="font-medium translate-y-1 text-gray-12">
+                  Avelin
+                </span>
+                <span className="text-gray-11 text-balance text-center text-sm text-medium">
+                  Brainstorming tool for code, with real-time collaboration.
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-6 items-center group">
+              <BazzaUIIcon
+                colored={false}
+                className='size-22 sm:size-28 shrink-0 **:transition-colors **:duration-300 **:ease-out [&_[data-slot="circle-bottom"]]:fill-gray-12/30 [&_[data-slot="circle-top"]]:fill-gray-12/50  group-hover:[&_[data-slot="circle-top"]]:fill-[#eb0c0c]/75 group-hover:[&_[data-slot="circle-bottom"]]:fill-[#0067ff]/75'
+              />
+              <div className="flex flex-col gap-4 items-center text-sm sm:!text-base">
+                <span className="font-medium translate-y-1 text-gray-12">
+                  bazza/ui
+                </span>
+                <span className="text-gray-11 text-balance text-center text-sm text-medium">
+                  Hand-crafted, modern React component library.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col gap-12 justify-center items-center">
@@ -78,27 +98,29 @@ export default function Page() {
           >
             Team
           </h2>
-          <div className="flex flex-col gap-4 items-center group">
+          <div className="flex flex-col gap-6 items-center group">
             <Avatar className="size-16 sm:size-24 grayscale-100 group-hover:grayscale-0 duration-300 ease-out transition-[filter]">
               <AvatarFallback>KB</AvatarFallback>
               <AvatarImage src="/bazza.png" />
             </Avatar>
-            <div className="flex flex-col gap-1 items-center text-sm sm:!text-base">
-              <span className="font-medium translate-y-1 text-gray-11">
+            <div className="flex flex-col gap-2 items-center text-sm sm:!text-base">
+              <span className="font-medium translate-y-1 text-gray-12">
                 Kian Bazarjani
               </span>
-              <span className="text-gray-12">Founder & Lead Developer</span>
+              <span className="text-gray-11 text-sm font-medium">
+                Founder & Lead Developer
+              </span>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-12 justify-center items-center py-12 h-[60svh]">
           <h2
-            className="text-5xl sm:text-7xl tracking-[-0.02em] font-[550] text-gray-12 flex items-center gap-6 sm:gap-8"
+            className="text-5xl sm:text-7xl tracking-[-0.02em] font-[550] text-gray-12 flex items-center gap-6 sm:gap-8 translate-x-1"
             style={{ fontVariationSettings: '"opsz" 28' }}
           >
             Let's{' '}
             <ChatBubbleLeftRightIcon className="size-24 sm:size-32 shrink-0 text-gray-10 transition-colors duration-300 ease-out hover:text-gray-12" />
-            talk.
+            chat.
           </h2>
           <div className="flex flex-col gap-2 items-center text-lg sm:text-xl font-[550] tracking-[-0.015em]">
             <span className="text-gray-10">Seriously, why not?</span>
